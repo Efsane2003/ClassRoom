@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .9s;
+}
+.box:first-child {
+  background-color: red;
+}
+.box:first-child:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.box:first-child h2{
+    display: none;   
+}
+.box:first-child:hover h1{
+    display: none;
+}
+.box:first-child:hover h2{
+    display: block;
+}
+.box:nth-child(2) {
+  background-color: blue;
+}
+.box:nth-child(2):hover{
+    transform: translate(50px,-200px);
+}
+.box:nth-child(2) h2{
+    display: none;
+}
+.box:nth-child(2):hover h1{
+    display: none;
+}
+.box:nth-child(2):hover h2{
+    display: block;
+}
+.box:nth-child(3) {
+  background-color: purple;
+  
+}
+.box:nth-child(4){
+  background-color: yellow;
+}
+.box:nth-child(3):hover{
+    transform: rotateY(360deg);
+}
+.box:nth-child(4):hover{
+    transform: skewX(10deg);
+}
+.second{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image1{
+    width: 300px;
+}
+.image2{
+    width: 50px;
+}
+.sec2{
+    animation: rotation 50s infinite linear;
+}
+.image1{
+    animation: rotation 10s infinite linear;
+
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
