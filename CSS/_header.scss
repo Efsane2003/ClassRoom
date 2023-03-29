@@ -1,0 +1,25 @@
+header{
+    background-color: black;
+    height: 50px;
+    
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                padding: 15px;
+                a{
+                    color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        color: black;
+                        background-color: white;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+#thrid {
+  .boxes {
+    margin: 5px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    height: 100vh;
+    border: 3px solid black;
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      border: dotted;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.8s;
+    }
+    .box1 {
+      &:hover {
+        background-image: url(./images/1.jpg);
+        transform: rotateX(360deg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        span {
+          display: none;
+        }
+      }
+    }
+    .box2 {
+      &:hover {
+        background-image: url(./images/2.jpg);
+        transform: rotateX(360deg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        span {
+          display: none;
+        }
+      }
+    }
+    .box3 {
+      &:hover {
+        background-image: url(./images/3.jpg);
+        transform: rotateX(360deg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
