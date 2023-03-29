@@ -1,0 +1,49 @@
+#thrid{
+    .boxes{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .8s;
+        }
+        .box1:hover{
+            transform: rotateX(360deg);
+            background-image: url(./1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            span{
+                display: none;
+            }
+            
+        }
+        .box2:hover{
+            transform: rotateX(360deg);
+            background-image: url(./5.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            span{
+                display: none;
+            }
+        }
+        .box3:hover{
+            transform: rotateX(360deg);
+            background-image: url(./2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            span{
+                display: none;
+            }
+        }
+    }
+}
