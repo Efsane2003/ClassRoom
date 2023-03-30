@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(./images/a3b0765a-6a35-42ac-8e79-7ee1166ba39b.jpg);
+}
+header .container {
+  max-width: 1200px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+header .container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .title nav {
+  position: relative;
+}
+header .container .title nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+}
+header .container .title nav ul li {
+  padding: 20px;
+  list-style: none;
+}
+header .container .title nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .container .title nav ul li a:hover::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  display: block;
+  position: absolute;
+}
+header .second .text {
+  margin-top: 180px;
+}
+header .second .text p {
+  color: rgb(190, 142, 83);
+}
+header .second .text h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+header .second .text a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid bisque;
+  padding: 10px;
+  background-color: pink;
+}
+header .img-hover img {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  transition: 1s;
+}
+header .img-hover img:hover {
+  transform: translateY(100px);
+}/*# sourceMappingURL=main.css.map */
