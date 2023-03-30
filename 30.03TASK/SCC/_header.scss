@@ -2,6 +2,8 @@ header {
   position: relative;
   height: 100vh;
   background-image: url(./images/a3b0765a-6a35-42ac-8e79-7ee1166ba39b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   .container {
     max-width: 1200px;
     margin-left: 60px;
@@ -41,7 +43,6 @@ header {
   .second {
     .text {
       margin-top: 180px;
-
       p {
         color: rgb(190, 142, 83);
       }
@@ -62,10 +63,10 @@ header {
   }
   .img-hover {
     img {
-      width: 500px;
+      width: 530px;
       position: absolute;
       right: 0;
-        transition: 1s;
+      transition: 1s;
       &:hover {
         transform: translateY(100px);
       }

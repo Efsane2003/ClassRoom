@@ -9,6 +9,8 @@ header {
   position: relative;
   height: 100vh;
   background-image: url(./images/a3b0765a-6a35-42ac-8e79-7ee1166ba39b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header .container {
   max-width: 1200px;
@@ -66,7 +68,7 @@ header .second .text a {
   background-color: pink;
 }
 header .img-hover img {
-  width: 500px;
+  width: 530px;
   position: absolute;
   right: 0;
   transition: 1s;
