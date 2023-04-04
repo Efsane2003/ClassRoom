@@ -1,0 +1,87 @@
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header img {
+  width: 150px;
+}
+header nav ul {
+  display: flex;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+header #frist {
+  height: 100vh;
+  background-image: url(../img/2img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header #second .title {
+  width: 50%;
+}
+header #second .title h1 {
+  line-height: 50px;
+}
+header #second img {
+  width: 200px;
+  height: 200px;
+}
+header #thrid .images {
+  height: 100vh;
+  background-image: url(../img/3img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header #thrid .images .text {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+header #thrid .images .text h1 {
+  color: white;
+}
+
+#section4 .box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section4 .box:nth-child(odd) {
+  background-color: blueviolet;
+}
+#section4 .box:nth-child(even) {
+  background-color: green;
+}
+#section4 .box:hover {
+  background-image: url(../img/img2.png);
+  background-position: center;
+  background-size: cover;
+  animation: slidein 1s;
+}
+#section4 .box:hover h4 {
+  display: none;
+}
+@keyframes slidein {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}/*# sourceMappingURL=main.css.map */
