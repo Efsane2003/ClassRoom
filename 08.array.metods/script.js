@@ -33,8 +33,10 @@
 // console.log(text.toLocaleLowerCase().indexOf("r",7))
 
 // 6.Find out vowels in 'text' and add them to 'newArr' which contains unique values. //['e','a','o']
-// let vowels = ['a', 'i', 'o', 'u', 'e']
-// let text = 'We are MERN-Stack developers'
+let vowels = ['a', 'i', 'o', 'u', 'e']
+let text = 'We are MERN-Stack developers'
+const newArr=[]
+text.split("").filter((item)=>vowels.includes(item)&& newArr.push(item))
 // function unique(arr) {
 //     let result = [];
 //     for (let str of arr) {
@@ -45,6 +47,8 @@
 //     return result ;
 //   }
 //   console.log(unique(text))
+
+
 
 // 3.Write a function(arrow function) called 'calcArea()' which to calculate sum region's area,
 //  if region's length is equal to 6 in 'arr2'
