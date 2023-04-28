@@ -1,67 +1,76 @@
 let form=document.querySelector(".form")
 let btnSubmit=document.querySelector(".btnSubmit")
-let input1=document.querySelector(".input1")
-let input2=document.querySelector(".input2")
-let input3=document.querySelector(".input3")
-let input4=document.querySelector(".input4")
-let input5=document.querySelector(".input5")
-let checked=document.querySelector(".checked")
-let radio=document.querySelector(".radio")
+let inputname=document.querySelector(".inputname")
+let inputsurname=document.querySelector(".inputsurname")
+let inputemai=document.querySelector(".inputemai")
+let inputpassword=document.querySelector(".inputpassword")
+let inputcheckbox=document.querySelector(".inputcheckbox")
+let checked=document.querySelector("h3")
+let radio=document.querySelectorAll(".radio")
 
 
 btnSubmit.setAttribute("disabled","")
 
-input1.addEventListener("mouseover",function(event){
+inputname.addEventListener("mouseover",function(event){
     this.style.backgroundColor="green"
     this.style.color="white"
 })
-input1.addEventListener("mouseout",function(){
+inputname.addEventListener("mouseout",function(){
     this.style.backgroundColor="transparent"
 })
 
-input2.addEventListener("click",function(){
+inputsurname.addEventListener("click",function(){
     this.style.backgroundColor="blue"
 })
-input2.addEventListener("mouseout",function(){
+inputsurname.addEventListener("mouseout",function(){
     this.style.backgroundColor="transparent"
 })
 
-input3.addEventListener("contextmenu",function(){
-    this.style.border=" 1px solid yellow"
+inputemai.addEventListener("contextmenu",function(){
+    this.style.backgroundColor="yellow"
 })
 
-input4.addEventListener("focus",function(event){
+inputpassword.addEventListener("focus",function(event){
     event.target.value="uygyujhyg"
 })
 
-checked.style.display="none"
-input5.addEventListener("focus",function(){
-    checked.style.display="block"
+checked.style.visibility="hidden"
+inputcheckbox.addEventListener("click",function(){
+    checked.style.visibility="visible"
 })
-input5.addEventListener("blur",function(){
-    checked.style.display="none"
-})
-
-// radio1.addEventListener("click",function(){
-//     alert("salam")
-// })
-// radio2.addEventListener("click",function(){
-//     alert("salam")
-// })
-// radio3.addEventListener("click",function(){
-//     alert("salam")
-// })
 
 radio.forEach(element => {
     element.addEventListener("click",function(){
      alert("thanks")
     })
-    
 });
 
-// btnSubmit.addEventListener("change",function(){
-//     if()
-// })
+
+inputname.addEventListener("click",function(){
+    if(inputname.value && inputsurname.value && inputcheckbox.checked){
+        btnSubmit.removeAttribute("disabled","")  
+    }else{
+        btnSubmit.disabled="true"
+    }
+})
+
+inputsurname.addEventListener("click",function(){
+    if(inputname.value && inputsurname.value && inputcheckbox.checked){
+        btnSubmit.removeAttribute("disabled","")  
+    }else{
+        btnSubmit.disabled="true"
+    }
+})
+inputcheckbox.addEventListener("click",function(){
+    if(inputname.value && inputsurname.value && inputcheckbox.checked){
+        btnSubmit.removeAttribute("disabled","")  
+    }else{
+        btnSubmit.disabled="true"
+    }
+})
+
+
+
 
 
 
