@@ -8,3 +8,5 @@
 Dom vs Bom
 13.Browser-events:https:https://friendly-haupia-ac3bd3.netlify.app
 
+14.Events methods :https://sweet-haupia-1222c2.netlify.app
+
