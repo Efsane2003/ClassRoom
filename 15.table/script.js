@@ -703,7 +703,13 @@
 let tbody=document.querySelector("tbody")
 let arrowDownName=document.querySelector(".id .fa-arrow-down")
 let arrowUpName=document.querySelector(".id .fa-arrow-up ")
+let idUpDown=document.querySelector(".idupdown")
+let thIdsort=document.querySelector(".id")
+let nameupdownSort=document.querySelector(".name")
+let nameupdown=document.querySelector(".nameupdown")
+let searchInput=document.querySelector("#search")
 
+const dataCopy = structuredClone(data);
 
 function sortTable(array){
     tbody.innerHTML=""
@@ -721,14 +727,45 @@ function sortTable(array){
 sortTable(data)
 
 
-let thId=document.querySelector(".id")
-thId.addEventListener("click",function(){
-    let sortedArr=data.sort((a,b)=>b.id-a.id)
-    
-
-    sortTable(sortedArr)
-
+searchInput.addEventListener("input",function(event){
+	let filterData=data.filter((item)=>item.first_name.toLocaleLowerCase().includes(event.target.value.toLocaleLowerCase()))
+	sortTable(filterData)
 })
 
+let bool = false;
+thIdsort.addEventListener("click", function () {
+  bool = !bool;
+  let sortedData;
+  if (bool) {
+    sortedData= data.sort((a, b) => b.id - a.id);
+	arrowUpName.style.display="block"
+	arrowDownName.style.display="none"
+	idUpDown.style.color="green"
+  } else {
+    sortedData = data.sort((a, b) => a.id - b.id);
+	arrowUpName.style.display="none"
+	arrowDownName.style.display="block"
+	idUpDown.style.color="red"
+  }
+  sortTable(sortedData);
+});
+nameupdown.style.display="flex"
+nameupdown.style.justifyContent="center"
 
+nameupdownSort.addEventListener("click",function(){
+	bool=!bool;
+	let sortedName;
+	if(bool){
+		sortedName=data.sort((a,b)=>b.first_name.localeCompare(a.first_name))
+		let upname=document.querySelector(".upname").style.display="block"
+		let downname=document.querySelector(".downname").style.display="none"
+		nameupdown.style.color="green"
+	}else{
+		sortedName=data.sort((a,b)=>a.first_name.localeCompare(b.first_name))
+		let downname=document.querySelector(".downname").style.display="block"
+		let upname=document.querySelector(".upname").style.display="none"
 
+		nameupdown.style.color="red"
+	}
+	sortTable(sortedName)
+})

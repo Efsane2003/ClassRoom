@@ -23,3 +23,23 @@ table th{
 .fa-arrow-down{
     display: none;
 }
+.arrowDown{
+    display: block;
+}
+.idupdown{
+    display: flex;
+    gap: 5px;
+}
+input{
+    width: 62%;
+    padding: 10px 17px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;  
+}

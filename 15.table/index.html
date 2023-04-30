@@ -10,20 +10,22 @@
 </head>
 <body>
     <section>
-        <input type="text">
+        <div class="search"><input type="text" id="search" placeholder="Search..."></div>
         <table>
             <thead>
                 <tr>
-                    <th class="id">Id
-                        <i class="fa-solid fa-arrow-down  "></i>
-                        <i class="fa-solid fa-arrow-up "></i>
+                    <th class="id"><div class="idupdown">Id
+                        <i class="fa-solid fa-arrow-down arrowDown "></i>
+                        <i class="fa-solid fa-arrow-up "></i></div>
                     </th>
-                    <th clas="name">name
-                        <i class="fa-solid fa-arrow-down  "></i>
-                        <i class="fa-solid fa-arrow-up "></i>
+                    <th class="name"><div class="nameupdown">
+                        Name
+                        <i class="fa-solid fa-arrow-down downname "></i>
+                        <i class="fa-solid fa-arrow-up upname"></i>
+                    </div>
                     </th>
                     <th>Email</th>
-                    <th>gender</th>
+                    <th>Gender</th>
                 </tr>
             </thead>
             <tbody></tbody>
