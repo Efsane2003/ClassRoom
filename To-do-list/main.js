@@ -2,7 +2,6 @@ let input = document.querySelector("#todo-input");
 let btn = document.querySelector(".btn-primary");
 let ulElement = document.querySelector(".list-group");
 let removeBtn = document.querySelector(".btn-danger");
-
 let arr = JSON.parse(localStorage.getItem("object")) || [];
 function lisFavbooks() {
   ulElement.innerHTML = "";
