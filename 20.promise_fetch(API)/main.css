@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table td,
+table th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    max-width: 900px;
+    margin:2px auto;
+    border-collapse: collapse;
+}
+thead{
+    background-color: aquamarine;
+}
+tbody{
+    background-color: bisque;
+}
+button{
+    background-color: brown;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
