@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "5",
+      "fristName": "Sinal",
+      "lastName": "Manager",
+      "email": "afsana2gmail.com",
+      "cardNumber": "12345678"
+    },
+    {
+      "fristName": "Rehman",
+      "lastName": "Abbasov",
+      "email": "rehman@gmail.com",
+      "id": "GSy6iwD",
+      "cardNumber": "12345678"
+    },
+    {
+      "fristName": "ramil",
+      "lastName": "Akberov",
+      "email": "ramil@mail.com",
+      "id": "zqAaLuZ"
+    },
+    {
+      "fristName": "Ramal ",
+      "lastName": "Alsanov",
+      "email": "wewe2#@klj",
+      "cardNumber": "123454556657",
+      "id": "sTHqP24"
+    }
+  ]
+}

@@ -59,16 +59,10 @@ function tableapi() {
 }
 tableapi();
 
-function deleteCard(id) {
-  deleBtn.forEach((button) =>
-    button.addEventListener("click", function () {
-      fetch(`${API}/${id}`, {
-        method: "DELETE",
-      }).then(() => {
-        tableapi();
-      });
-    })
-  );
-  console.log("deleted", id);
+function deleteCard(id){
+  fetch(`${API}/${id}`,{
+    method:"DELETE"
+  }).then(()=>{
+    tableapi()
+  })
 }
-deleteCard();
